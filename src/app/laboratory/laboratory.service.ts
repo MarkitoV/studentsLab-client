@@ -2,7 +2,7 @@ import { Subject } from 'rxjs/Subject';
 
 import { Exercise } from './exercise.model';
 
-export class TrainingService {
+export class LaboratoryService {
   exerciseChanged = new Subject<Exercise>();
   private availableExercises: Exercise[] = [
     { id: 'crunches', name: 'Crunches', duration: 30, calories: 8 },

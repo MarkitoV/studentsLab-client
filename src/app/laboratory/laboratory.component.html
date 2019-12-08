@@ -1,0 +1,10 @@
+<h2 class="title">LABORATORIOS</h2>
+<mat-tab-group *ngIf="!ongoingTraining">
+  <mat-tab label="Nuevo">
+    <app-new-laboratory></app-new-laboratory>
+  </mat-tab>
+  <mat-tab label="Listado">
+    <app-past-laboratories></app-past-laboratories>
+  </mat-tab>
+</mat-tab-group>
+<app-current-laboratory *ngIf="ongoingTraining"></app-current-laboratory>
